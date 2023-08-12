@@ -15,3 +15,10 @@ class RecAccess{
         return c;
     }
 }
+class AccessTest{
+    public static void main(String args[]){
+        RecAccess obj= new RecAccess();
+        //a and b may be accessed directly
+        obj.a=10;
+    }
+}
