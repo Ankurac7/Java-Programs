@@ -20,5 +20,13 @@ class AccessTest{
         RecAccess obj= new RecAccess();
         //a and b may be accessed directly
         obj.a=10;
+        obj.b=20;
+        //c cannot be accessed directly
+        //obj.c=30;
+        //c can be accessed through its methods
+
+        obj.setc(100);
+
+        System.out.println("values of a,b,c are:" + obj.a+ " "+obj.b+" "+obj.getc());
     }
 }
